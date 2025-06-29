@@ -99,19 +99,26 @@ header h1 {
         height: 100%;
         width: auto;
     }
-    .ConteudoArtigo{
-        display: flex;
-        flex-direction: column;
-        margin-left: 10px;
+    .ConteudoArtigo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
 
+    height: 100%;       
+    box-sizing: border-box; 
     }
 
-    .ConteudoArtigo .hashtags{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end ;
-        color: gray;
-    }
+.ConteudoArtigo > h2,
+.ConteudoArtigo > p {
+    margin: 0 0 20px 0; 
+    flex-shrink: 0;      
+}
+
+.ConteudoArtigo .hashtags {
+    margin-top: auto;  
+    color: lightslategrey;
+}
+
     main .Destaques {
         display: flex;
         width: 300px;
